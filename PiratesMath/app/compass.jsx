@@ -5,11 +5,9 @@ import React from 'react'
 const Compass = () => {
   return (
     <View>
-      <Text>Compass</Text>
+      <Text className="text-3xl">Compass</Text>
     </View>
   )
 }
 
 export default Compass
-
-const styles = StyleSheet.create({})
