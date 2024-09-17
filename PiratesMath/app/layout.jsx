@@ -1,19 +1,21 @@
-import {StatusBar, StyleSheet,Text,View} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native'
+import {Stack} from 'expo-router';
 
-export default function App(){
-    return(
-        <View style={styles.container}>
-            <Text>Pirates Math</Text>
-            <StatusBar style="auto"/>
-        </View>
-    );
+const RootLayout = () => {
+  return (
+    <Stack>
+        <Stack.Screen name="index" options={{headerShown:false}}/>
+    </Stack>
+  )
 }
+
+export default RootLayout
 
 const styles = StyleSheet.create({
     container:{
+        display: 'flex',
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-});
+        alighItems: 'center',
+        justifyContent: 'center'
+    }
+})

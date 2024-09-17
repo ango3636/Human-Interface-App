@@ -1,10 +1,12 @@
 import {StatusBar, StyleSheet,Text,View} from 'react-native';
+import { Link } from 'expo-router';
 
 export default function App(){
     return(
         <View style={styles.container}>
             <Text>Pirates Math</Text>
             <StatusBar style="auto"/>
+            <Link href="/compass" style={{color: 'blue'}}>Go to Compass Game</Link>
         </View>
     );
 }
