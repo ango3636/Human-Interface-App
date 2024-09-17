@@ -3,7 +3,7 @@ import { Link } from 'expo-router';
 
 export default function App(){
     return(
-        <View >
+        <View>
             <Text className="text-3xl">Pirates Math</Text>
             <StatusBar style="auto"/>
             <Link href="/compass" style={{color: 'blue'}}>Go to Compass Game</Link>
